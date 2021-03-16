@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DevOps Challenge</title>
+</head>
+
+<body>
+  <div class="app-status">
+    <h2>App Status</h2>
+    <span class="app-status-indicator">
+      Not Connected
+    </span>
+  </div>
+
+  <form onsubmit="return save()">
+    <h2>Add Name</h2>
+    <label for="FirstName">First Name</label>
+    <input type="text" id="FirstName" required>
+    <label for="LastName">Last Name</label>
+    <input type="text" id="LastName" required>
+    <input type="submit">
+    <div class="error"></div>
+  </form>
+
+  <div class="app-data">
+    <h2>App Data</h2>
+    <ul class="app-data-list">
+    </ul>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
